@@ -1,46 +1,136 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Wesoła wycieczka w treść</title>
-<link rel="stylesheet" href="f13/styl.css" media="screen"/>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wesoła wycieczka w treść</title>
+    <link rel="stylesheet" href="f13/styl2.css" media="screen" />
+  <script>
+ 	window.onload = function()
+  {
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+  if( isMobile.any() ) document.body.style.backgroundAttachment="scroll";
+  }
+  </script>
+  </head>
 <body>
-<nav id="gora">
-<span><a href="/xhtml/">Xhtml</a></span>
-<span><a href="/teksty/">Teksty dowolne</a></span> 
-<span><a href="/pomysly/">Pomysły także dowolne</a></span> 
-<span><a href="/autor/">Autorskie takie tam</a></span>
+<div id="gora-kontener">
+<nav id="topbar">
+  <span id="logo"><a href="#">SuperLogo</a></span>
+  <a href="#">Teksty</a>
+  <a href="#">Javascript</a>
+  <a href="#">Autor</a>
 </nav>
-<nav id="menu">
-<p><a href="/teksty/">Teksty dowolne</a></p>
-<p><a href="/pomysly/">Pomysły także dowolne</a></p>
-<p><a href="/autor/">Autorskie takie tam</a></p>
-<p class="social"><a href="https://www.facebook.com/marcin.marcinowy.5"><img src="img/facebook_32.png" width="32" height="32" alt="Buziobook"/></a>
-<a href="https://twitter.com/Czarnodziej"><img src="img/twitter_32.png" width="32" height="32" alt="Ćwierkacz"/></a>
-<a href="mailto:pagodemc@gmail.com"><img src="img/mail_32.png" width="32" height="32" alt="Poczta"/></a>
-</p>
-</nav> 	
+</div>
+<div id="main-container">
+<nav id="lewa-kolumna">
+  <ul id="sidenav">
+    <li>
+      <a href="teksty/">Teksty dowolne</a>
+    </li>
+    <li>
+      <a href="autor/">Autorskie opisy</a>
+    </li>
+    <li id="rozwin">
+    <a href="javascript/">Javascript</a> 
+    <a href="javascript/">"Czysty" Javascript</a> 
+    <a href="javascript/">Jquery</a>
+    </li>
+  </ul>
+  <p class="social">
+  <a href="https://www.facebook.com/marcin.marcinowy.5">
+    <img src="img/facebook_32.png" alt="ikona facebooka" />
+  </a> 
+  <a href="https://twitter.com/Czarnodziej">
+    <img src="img/twitter_32.png" alt="ikona twittera" />
+  </a> 
+  <a href="mailto:pagodemc@gmail.com">
+    <img src="img/mail_32.png" alt="ikona poczty" />
+  </a> 
+  <a href="https://github.com/Czarnodziej">
+    <img src="img/github_32.png" alt="ikona GitHub" />
+  </a>
+  </p>
+</nav>
 <article>
-<header>
-<h1>Tytuł! Witam tutaj, bo przecież nie gdzieś indziej.</h1>
-</header>	
-<p>
-<a href="/1m/"><img class="img" src="img/1min.jpg" width="250" height="212" alt="Radość"/></a>
-</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <header>
+    <h1>Tytuł! Witam tutaj, bo przecież nie gdzieś indziej.</h1>
+  </header>
+  <p>
+    <a href="#">
+      <img class="obrazek" src="img/1min.gif" alt="random image">
+    </a>
+  </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </article>
-<footer id="stopka_strony">
-<p class="social"><a href="https://www.facebook.com/marcin.marcinowy.5"><img src="img/facebook_32.png" width="32" height="32" alt="Buziobook"/></a>
-<a href="https://twitter.com/Czarnodziej"><img src="img/twitter_32.png" width="32" height="32" alt="Ćwierkacz"/></a>
-<a href="mailto:pagodemc@gmail.com"><img src="img/mail_32.png" width="32" height="32" alt="Poczta"/></a></p>
-<p id="copyrajt">&copy;2013. Kopiowanie fragmentów strony bez zgody autora jest czynem karygodnym.</p>
-</footer>	
+<footer id="stopka-strony">
+  <p class="social">
+  <a href="https://www.facebook.com/marcin.marcinowy.5">
+    <img src="img/facebook_32.png" alt="ikona facebooka" />
+  </a> 
+  <a href="https://twitter.com/Czarnodziej">
+    <img src="img/twitter_32.png" alt="ikona twittera" />
+  </a> 
+  <a href="mailto:pagodemc@gmail.com">
+    <img src="img/mail_32.png" alt="ikona poczty" />
+  </a> 
+  <a href="https://github.com/Czarnodziej">
+    <img src="img/github_32.png" alt="ikona GitHub" />
+  </a>
+  </p>
+  <p id="copyrajt">©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.
+  </p>
+</footer>
+</div>
 </body>
 </html>
-
