@@ -36,7 +36,7 @@ a:hover {
   color: red;
 }
 
-/*---- górny pasek ----*/
+/*---- górny pasek (ง'̀-'́)ง ----*/
 
 #gora-kontener,
 ul#sidenav li:hover /* ten sam gradient w przyciskach menu lewo*/
@@ -230,7 +230,6 @@ article h2 {
   padding-left: 0;
 }
 
-
 #skillsv li {
   border: 2px solid navy;
   margin: 2px 0;
@@ -242,7 +241,6 @@ article h2 {
 #skillsv span {
   display: block;
 }
-
 
 /*---- gwiazdkowa ocena ----*/
 
