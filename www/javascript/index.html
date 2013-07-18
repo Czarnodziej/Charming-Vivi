@@ -1,62 +1,27 @@
 <!DOCTYPE html>
-<html lang="pl">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Wesoła wycieczka w treść</title>
-  <link rel="stylesheet" href="../f13/smoothness/jquery-ui-1.10.3.custom.min.css" />
-  <script src="js/jquery-2.0.2.min.js"></script>
-  <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-  <script src="js/jquery.ui.datepicker-pl.js"></script>
-  <link rel="stylesheet" href="../f13/styl.css" />
-  <link rel="stylesheet" href="../f13/font-awesome.min.css">
-  <link rel="shortcut icon" href="../favicon.png" type="image/png">
-  <script>
-  $(function () {
-    "use strict";
-    $("#datepicker")
-      .datepicker({
-        autoSize: true,
-        regional: "pl",
-        showWeek: true,
-        showAnim: "slide",
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        showButtonPanel: true,
-        changeMonth: true,
-        changeYear: true,
-        yearRange: "1982:2032"
-      });
-  });
-  $(function () {
-    "use strict";
-    $(document)
-      .tooltip({
-        track: true
-      });
-  });
-  $(function () {
-    "use strict";
-    var tabs = $("#tabs")
-      .tabs();
-    tabs.find(".ui-tabs-nav")
-      .sortable({
-        axis: "x",
-        stop: function () {
-          tabs.tabs("refresh");
-        }
-      });
-  });
-  window.onload = function mobilBGAttachFix() {
-    "use strict";
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
-      document.body.style.backgroundAttachment = "scroll";
-    }
-  };
-  </script>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Wesoła wycieczka w treść</title>
+    <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
+      Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
+      lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
+      Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
+    <![endif]-->
     <div id="gora-kontener">
       <nav id="topbar">
         <span id="logo"><a href="../"><i class="icon-fixed-width icon-home"></i>SuperLogo</a></span>
@@ -160,10 +125,18 @@
             <img src="../img/github_32.png" alt="ikona GitHub" />
           </a>
         </p>
-        <p id="copyrajt">©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.
+        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.
         </p>
       </footer>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-ui-1.10.3.min.js"><\/script>');</script>
+    <script src="../js/vendor/jquery.ui.datepicker-pl.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/uiconfig.js"></script>
   </body>
-
 </html>
