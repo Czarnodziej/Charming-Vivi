@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>  
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
     <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.10.3.custom.min.css">
@@ -125,7 +124,25 @@
             <img src="../img/github_32.png" alt="ikona GitHub" />
           </a>
         </p>
-        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.
+        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
+          <?php
+          setlocale(LC_ALL, 'pl');
+
+          function strftimeV($format, $timestamp) {
+            return iconv("ISO-8859-2", "UTF-8", ucfirst(strftime($format, $timestamp)));
+          }
+
+          function get_page_mod_time() {
+            $incls = get_included_files();
+            $incls = array_filter($incls, "is_file");
+            $mod_times = array_map('filemtime', $incls);
+            $mod_time = max($mod_times);
+            return $mod_time;
+          }
+
+          echo "Ostatnia aktualizacja: " . strftimeV("%A %d %B %Y", get_page_mod_time());
+          ?>
+
         </p>
       </footer>
     </div>
