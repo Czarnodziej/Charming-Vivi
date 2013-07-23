@@ -1,0 +1,135 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2013-07-16, 15:24:37
+    Author     : Czarnodziej
+*/
+
+@import "zen";
+
+  $zen-column-count: 3;
+  $zen-gutter-width: 10px;
+  
+.container {
+ @include zen-grid-container;
+  width: 98%;
+  margin: 50px auto 0 auto;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight {
+  text-align: left;
+}
+
+.one {
+  @include zen-grid-item(1, 1);
+}
+ 
+.two {
+  @include zen-grid-item(1, 2);
+}
+ 
+.nested {
+  @include zen-grid-item(1, 3);
+  @include zen-nested-container();
+}
+
+.one {
+  @include zen-grid-item(1, 1);
+}
+ 
+.two {
+  @include zen-grid-item(1, 2);
+}
+ 
+.nested {
+  @include zen-grid-item(1, 3);
+  @include zen-nested-container();
+  background: #ccc;
+}
+ 
+.three {
+  @include zen-grid-item(3, 1);
+}
+ 
+.four {
+  @include zen-clear();
+  @include zen-grid-item(3, 1);
+}
+
+
+.container2 {
+  @include zen-grid-container;
+  $zen-column-count: 4;
+  $zen-gutter-width: 10px;
+  width: 98%;
+  margin: 0 auto;
+  background: #999;
+}
+ 
+.five {
+  @include zen-grid-item(1, 1);
+}
+ 
+.six {
+  @include zen-grid-item(1, 2);
+}
+ 
+.seven {
+  @include zen-grid-item(1, 3);
+}
+ 
+.eight {
+  @include zen-grid-item(1, 4);
+}
+
+@media screen and (max-width:768px) {
+   
+  .container {
+    $zen-column-count: 1;
+    $zen-gutter-width: 10px;
+  }
+ 
+    .one {
+      @include zen-grid-item(1, 1);
+    }
+ 
+    .two {
+      @include zen-clear();
+      @include zen-grid-item(1, 1);
+    }
+ 
+    .nested {
+      @include zen-clear();
+      @include zen-grid-item(1, 1);
+      @include zen-nested-container();
+      background: #ccc;
+    }
+ 
+      .three {
+        @include zen-clear();
+        @include zen-grid-item(1, 1);
+      }
+ 
+      .four {
+        @include zen-clear();
+        @include zen-grid-item(1, 1);
+      }
+ 
+  .newtest {
+    $zen-column-count: 2;
+    $zen-gutter-width: 10px;
+  }
+ 
+    .five, .seven {
+      @include zen-clear();
+      @include zen-grid-item(1, 1);
+    }
+ 
+    .six, .eight {
+      @include zen-grid-item(1, 2);
+    }
+ 
+}

@@ -1,0 +1,1 @@
+$(function(){$("#datepicker").datepicker({autoSize:true,regional:"pl",showWeek:true,showAnim:"slide",showOtherMonths:true,selectOtherMonths:true,showButtonPanel:true,changeMonth:true,changeYear:true,yearRange:"1982:2032"});$(document).tooltip({track:true});var a=$("#tabs").tabs();a.find(".ui-tabs-nav").sortable({axis:"x",stop:function(){a.tabs("refresh")}})});

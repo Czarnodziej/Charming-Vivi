@@ -1,4 +1,14 @@
 #################
+## Netbeans
+#################
+.sass-cache/
+old/
+nbproject/
+compass watch.bat
+config.rb
+
+
+#################
 ## Eclipse
 #################
 

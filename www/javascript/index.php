@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
     <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.10.3.custom.min.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/styl.css">
+    <link rel="stylesheet" href="../css/normalize-min.css">
+    <link rel="stylesheet" href="../css/main-min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
@@ -25,7 +24,7 @@
       <nav id="topbar">
         <span id="logo"><a href="../"><i class="icon-fixed-width icon-home"></i>SuperLogo</a></span>
         <a href="#">Teksty</a>
-        <a href="#">Javascript</a>
+        <a href="#" title="Tutaj jesteś">Javascript</a>
         <a href="../autor">Autor</a>
       </nav>
     </div>
@@ -44,20 +43,20 @@
             <a href="../autor/"><i class="icon-fixed-width icon-thumbs-up"></i>Autorskie opisy</a>
           </li>
         </ul>
-        <p class="social">
+        <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <img src="../img/facebook_32.png" alt="ikona facebooka" />
+            <span class="fb" alt="ikona facebooka"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <img src="../img/twitter_32.png" alt="ikona twittera" />
+            <span class="tw" alt="ikona twittera"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <img src="../img/mail_32.png" alt="ikona poczty" />
+            <span class="mail" alt="ikona poczty e-mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <img src="../img/github_32.png" alt="ikona GitHub" />
+            <span class="gh" alt="ikona github"></span>
           </a>
-        </p>
+        </div>
       </nav>
       <article class="clearfix">
         <!--żeby float zachowywał wysokość kontenera-->
@@ -110,50 +109,35 @@
         </div>
       </article>
       <footer id="stopka-strony">
-        <p class="social">
+        <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <img src="../img/facebook_32.png" alt="ikona facebooka" />
+            <span class="fb" alt="ikona facebooka"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <img src="../img/twitter_32.png" alt="ikona twittera" />
+            <span class="tw" alt="ikona twittera"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <img src="../img/mail_32.png" alt="ikona poczty" />
+            <span class="mail" alt="ikona poczty e-mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <img src="../img/github_32.png" alt="ikona GitHub" />
+            <span class="gh" alt="ikona github"></span>
           </a>
-        </p>
+        </div>
         <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
           <?php
-          setlocale(LC_ALL, 'pl');
-
-          function strftimeV($format, $timestamp) {
-            return iconv("ISO-8859-2", "UTF-8", ucfirst(strftime($format, $timestamp)));
-          }
-
-          function get_page_mod_time() {
-            $incls = get_included_files();
-            $incls = array_filter($incls, "is_file");
-            $mod_times = array_map('filemtime', $incls);
-            $mod_time = max($mod_times);
-            return $mod_time;
-          }
-
-          echo "Ostatnia aktualizacja: " . strftimeV("%A %d %B %Y", get_page_mod_time());
+          include ("../php/dataPL.php");
           ?>
-
         </p>
       </footer>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+    <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+    <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-ui-1.10.3.min.js"><\/script>');</script>
-    <script src="../js/vendor/jquery.ui.datepicker-pl.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/uiconfig.js"></script>
+    <script> window.jQuery || document.write('<script src="js/vendor/jquery-ui-1.10.3.min.js"><\/script>');</script>
+    <script src="../js/vendor/jquery.ui.datepicker-pl-min.js"></script>
+    <script src="../js/main-min.js"></script>
+    <script src="../js/uiconfig-min.js"></script>
   </body>
 </html>
