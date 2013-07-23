@@ -7,11 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styl.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
@@ -44,20 +41,20 @@
             <a href="autor/"><i class="icon-fixed-width icon-thumbs-up"></i>Autorskie opisy</a>
           </li>
         </ul>
-        <p class="social">
+        <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <img src="img/facebook_32.png" alt="ikona facebooka" />
+            <span class="fb"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <img src="img/twitter_32.png" alt="ikona twittera" />
+            <span class="tw"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <img src="img/mail_32.png" alt="ikona poczty" />
+            <span class="mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <img src="img/github_32.png" alt="ikona GitHub" />
+            <span class="gh"></span>
           </a>
-        </p>
+        </div>
       </nav>
       <article>
         <header>
@@ -73,11 +70,9 @@
           <br>W planach są:
         </p>
         <ul class="icons-ul">
-          <li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie frameworka Compass oraz Netbeans IDE</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Konstrukcja blogowa z wykorzystaniem frameworka Cake PHP</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wielce użyteczne formularze z wykorzystaniem AJAX</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie Javascript do stworzenia prostej gry przeglądarkowej</li>
-          <li><i class="icon-li icon-screenshot icon-large"></i>Optymalizacja skryptów i szybsze wczytywanie strony</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Parallax Scrolling</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Kilka artykułów nt. technologii internetowo-komputerowych z naciskiem na dostępność dla zwykłych użytkowników</li>
         </ul>
@@ -86,41 +81,34 @@
           <i class="icon-smile icon-large"></i>). A tych nie brakuje.</p>
       </article>
       <footer id="stopka-strony">
-        <p class="social">
+        <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <img src="img/facebook_32.png" alt="ikona facebooka" />
+            <span class="fb"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <img src="img/twitter_32.png" alt="ikona twittera" />
+            <span class="tw"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <img src="img/mail_32.png" alt="ikona poczty" />
+            <span class="mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <img src="img/github_32.png" alt="ikona GitHub" />
+            <span class="gh"></span>
           </a>
-        </p>
+        </div>
         <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
           <?php
-          setlocale(LC_ALL, 'pl');
-
-          function strftimeV($format, $timestamp) {
-            return iconv("ISO-8859-2", "UTF-8", ucfirst(strftime($format, $timestamp)));
-          }
-
-          function get_page_mod_time() {
-            $incls = get_included_files();
-            $incls = array_filter($incls, "is_file");
-            $mod_times = array_map('filemtime', $incls);
-            $mod_time = max($mod_times);
-            return $mod_time;
-          }
-
-          echo "Ostatnia aktualizacja: " . strftimeV("%A %d %B %Y", get_page_mod_time());
+          include ("php/dataPL.php");
           ?>
         </p>
       </footer>
     </div> 
-    <script src="js/main.js"></script>
+    <script>
+    window.onload = function mobilBGAttachFix() {
+      "use strict";
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
+        document.body.style.backgroundAttachment = "scroll";
+      }
+    };
+    </script>
   </body>
 </html>
