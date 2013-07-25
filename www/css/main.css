@@ -9,8 +9,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700&subset=latin-ext);
-
 html,
 button,
 input,
@@ -93,11 +91,26 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-* {
-  border: 0;
-  margin: 0;
-  outline: 0;
-  padding: 0;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
@@ -159,7 +172,7 @@ ul#sidenav li:hover /* same gradient in left menu buttons */
 
 #topbar a {
   display: inline;
-  border: 0px solid black;
+  border: 0 solid black;
   border-left-width: 2px;
   padding: 0 3px;
 }
@@ -235,7 +248,7 @@ ul#sidenav li:hover {
 }
 
 ul#sidenav li:hover a {
-  margin-top: 0px; 
+  margin-top: 0; 
 }
 
 
@@ -260,19 +273,19 @@ ul#sidenav li#rozwin:hover a:first-child {
 }
 
 .social .fb {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 .social .tw {
-    background-position: -96px 0px;
+    background-position: -96px 0;
 }
 
 .social .mail {
-    background-position: -64px 0px;
+    background-position: -64px 0;
 }
 
 .social .gh {
-    background-position: -32px 0px;
+    background-position: -32px 0;
 }
 
 
@@ -313,7 +326,7 @@ article h2 {
 /*---- author's skills ----*/
 
 
-#button {
+.button {
   font-weight: 900;
   color: black;
   border-radius: 7px;
@@ -329,7 +342,7 @@ article h2 {
   transition: 1s;
 }
 
-#button:hover{
+.button:hover{
   color: red;
   border-color: navy;
 }
@@ -440,11 +453,14 @@ article h2 {
 #datepicker {
   font-weight: 900;
   color: navy;
+  text-align: center;
+  width: 16em;
 }
 
-div.ui-datepicker { 
+.ui-datepicker { 
   font-size: 14px;
   text-align: center; /*---- week number alignment ----*/
+
 }
 
 .ui-datepicker-week-end a { /*---- color of the weekends ----*/
@@ -579,7 +595,7 @@ label {
 
 .visuallyhidden {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;

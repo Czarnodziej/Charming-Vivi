@@ -7,11 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=latin-ext' type='text/css'>
     <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.10.3.custom.min.css">
     <link rel="stylesheet" href="../css/normalize-min.css">
-    <link rel="stylesheet" href="../css/main-min.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   <body>
     <!--[if lt IE 7]>
@@ -45,16 +46,16 @@
         </ul>
         <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <span class="fb" alt="ikona facebooka"></span>
+            <span class="fb"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <span class="tw" alt="ikona twittera"></span>
+            <span class="tw"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <span class="mail" alt="ikona poczty e-mail"></span>
+            <span class="mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <span class="gh" alt="ikona github"></span>
+            <span class="gh"></span>
           </a>
         </div>
       </nav>
@@ -65,7 +66,7 @@
         </header>
         <p>Przykłady skryptów z wykorzystaniem jQuery.</p>
         <p>1. Wybór daty:
-          <input type="text" id="datepicker" value="Klik mnie!" title="No kliknij." />
+          <input type="text" id="datepicker" class="button"value="Klik mnie!" title="No kliknij." />
         </p>
         <p>2. Dymki tekstowe:
           <a href="#" title="Cudna chmurka-dymek!">Tutaj kursorem najedź!</a>
@@ -111,16 +112,16 @@
       <footer id="stopka-strony">
         <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <span class="fb" alt="ikona facebooka"></span>
+            <span class="fb"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <span class="tw" alt="ikona twittera"></span>
+            <span class="tw"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <span class="mail" alt="ikona poczty e-mail"></span>
+            <span class="mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <span class="gh" alt="ikona github"></span>
+            <span class="gh"></span>
           </a>
         </div>
         <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
@@ -136,8 +137,8 @@
     <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script> window.jQuery || document.write('<script src="js/vendor/jquery-ui-1.10.3.min.js"><\/script>');</script>
-    <script src="../js/vendor/jquery.ui.datepicker-pl-min.js"></script>
-    <script src="../js/main-min.js"></script>
-    <script src="../js/uiconfig-min.js"></script>
+    <script src="../js/vendor/jquery.ui.datepicker-pl.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/uiconfig.js"></script>
   </body>
 </html>
