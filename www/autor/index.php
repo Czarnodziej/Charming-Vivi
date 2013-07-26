@@ -79,7 +79,7 @@
           czytania wątpliwie interesującego tekstu.
         </p>
         <p>Autorskie umiejętności:
-          <button id="button" class="button" type="button">Pokaż detale</button>
+          <button id="button" type="button">Pokaż detale</button>
         </p>
         <ul id="skills">
           <li>HTML5/CSS3 <span class="four-star"></span>
@@ -164,7 +164,34 @@
           ?>
         </p>
       </footer>
-    </div>   
-    <script src="../js/script.min.js"></script>
+    </div>
+    <script>
+    window.onload = function () {
+      "use strict";
+      var przycisk,
+        mobilBGAttachFix;
+      przycisk = function () {
+        var button = document.getElementById('button');
+        button.onclick = function () {
+          var skillVis = document.getElementById('skills') || document.getElementById('skillsv');
+          if(skillVis.id === 'skills') {
+            skillVis.id = 'skillsv';
+            button.textContent = 'Ukryj detale';
+          } else {
+            skillVis.id = 'skills';
+            button.textContent = 'Pokaż detale';
+          }
+        };
+      };
+
+      mobilBGAttachFix = function () {
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
+          document.body.style.backgroundAttachment = "scroll";
+        }
+      };
+      przycisk();
+      mobilBGAttachFix();
+    };
+    </script>
   </body>
 </html>

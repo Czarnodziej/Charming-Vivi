@@ -131,8 +131,13 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
     <script src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="../js/script.min.js"></script>
     <script>
+    window.onload = function mobilBGAttachFix() {
+      "use strict";
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
+        document.body.style.backgroundAttachment = "scroll";
+      }
+    };
     /* Polish initialisation for the jQuery UI date picker plugin. */
     /* Written by Jacek Wysocki (jacek.wysocki@gmail.com). */
     /* Modified by Marcin Mongiało (pagodemc@gmail.com). */
@@ -156,6 +161,35 @@
                     showMonthAfterYear: false,
                     yearSuffix: ''};
             $.datepicker.setDefaults($.datepicker.regional['pl']);
+    });
+    $(function() {
+      "use strict";
+      $("#datepicker")
+              .datepicker({
+        autoSize: true,
+        regional: "pl",
+        showWeek: true,
+        showAnim: "slide",
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        showButtonPanel: true,
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1982:2032"
+      });
+      $(document)
+              .tooltip({
+        track: true
+      });
+      var tabs = $("#tabs")
+              .tabs();
+      tabs.find(".ui-tabs-nav")
+              .sortable({
+        axis: "x",
+        stop: function() {
+          tabs.tabs("refresh");
+        }
+      });
     });
     </script>
   </body>
