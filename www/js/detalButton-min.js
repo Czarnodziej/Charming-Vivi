@@ -1,1 +1,0 @@
-window.onload=function(){var a,a=function(){var b=document.getElementById("button");b.onclick=function(){var c=document.getElementById("skills")||document.getElementById("skillsv");if(c.id==="skills"){c.id="skillsv";b.textContent="Ukryj detale"}else{c.id="skills";b.textContent="Pokaż detale"}}};a()};

@@ -7,10 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=latin-ext' type='text/css'>
-    <link rel="stylesheet" href="../css/normalize-min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
@@ -85,9 +82,10 @@
           <button id="button" class="button" type="button">Pokaż detale</button>
         </p>
         <ul id="skills">
-          <li>HTML5/CSS3 <span class="three-star-half"></span>
-            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>. Arystokracja.
-              <br>Todo: <a href="http://jvi.sourceforge.net/">jVi</a>, <a href="http://ant.apache.org/">Apache ANT</a>
+          <li>HTML5/CSS3 <span class="four-star"></span>
+            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, <a href="http://ant.apache.org/">Apache ANT</a>.<br>
+              <a href="https://developers.google.com/speed/pagespeed/insights#url=czarnodziej.sanfre.eu">Optymalna prędkość</a>.
+              <br>Todo: <a href="http://jvi.sourceforge.net/">jVi</a> 
             </p>
           </li>
           <li>JavaScript <span class="one-star-half"></span>
@@ -106,7 +104,7 @@
               <br>Todo: commandline</p>
           </li>
           <li>Apache <span class="two-star"></span>
-            <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, moduły.
+            <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, cache, gzip.
             </p>
           </li>
           <li>Linux <span class="two-star"></span>
@@ -167,7 +165,6 @@
         </p>
       </footer>
     </div>   
-    <script src="../js/main-min.js"></script>
-    <script src="../js/detalButton-min.js"></script>
+    <script src="../js/script.min.js"></script>
   </body>
 </html>

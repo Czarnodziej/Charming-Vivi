@@ -7,11 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=latin-ext' type='text/css'>
     <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.10.3.custom.min.css">
-    <link rel="stylesheet" href="../css/normalize-min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   <body>
@@ -66,7 +63,7 @@
         </header>
         <p>Przykłady skryptów z wykorzystaniem jQuery.</p>
         <p>1. Wybór daty:
-          <input type="text" id="datepicker" class="button"value="Klik mnie!" title="No kliknij." />
+          <input type="text" id="datepicker" class="button" value="Klik mnie!" title="No kliknij." />
         </p>
         <p>2. Dymki tekstowe:
           <a href="#" title="Cudna chmurka-dymek!">Tutaj kursorem najedź!</a>
@@ -133,12 +130,33 @@
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script> window.jQuery || document.write('<script src="js/vendor/jquery-ui-1.10.3.min.js"><\/script>');</script>
-    <script src="../js/vendor/jquery.ui.datepicker-pl.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/uiconfig.js"></script>
+    <script src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script>
+    /* Polish initialisation for the jQuery UI date picker plugin. */
+    /* Written by Jacek Wysocki (jacek.wysocki@gmail.com). */
+    /* Modified by Marcin Mongiało (pagodemc@gmail.com). */
+    jQuery(function($){
+            $.datepicker.regional['pl'] = {
+                    closeText: 'Zamknij',
+                    prevText: '&#x3c;Poprzedni',
+                    nextText: 'Następny&#x3e;',
+                    currentText: 'Dziś',
+                    monthNames: ['stycznia','lutego','marca','kwietnia','maja','czerwca',
+                    'lipca','sierpnia','września','października','listopada','grudnia'],
+                    monthNamesShort: ['Sty','Lu','Mar','Kw','Maj','Cze',
+                    'Lip','Sie','Wrz','Pa','Lis','Gru'],
+                    dayNames: ['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'],
+                    dayNamesShort: ['Nie','Pn','Wt','Śr','Czw','Pt','So'],
+                    dayNamesMin: ['N','Pn','Wt','Śr','Cz','Pt','So'],
+                    weekHeader: 'Tydz',
+                    dateFormat: 'DD, d MM yy',
+                    firstDay: 1,
+                    isRTL: false,
+                    showMonthAfterYear: false,
+                    yearSuffix: ''};
+            $.datepicker.setDefaults($.datepicker.regional['pl']);
+    });
+    </script>
   </body>
 </html>

@@ -7,12 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=latin-ext' type='text/css'>
-    <link rel="stylesheet" href="css/normalize-min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -73,11 +70,9 @@
           <br>W planach są:
         </p>
         <ul class="icons-ul">
-          <li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie frameworka Compass oraz Netbeans IDE</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Konstrukcja blogowa z wykorzystaniem frameworka Cake PHP</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wielce użyteczne formularze z wykorzystaniem AJAX</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie Javascript do stworzenia prostej gry przeglądarkowej</li>
-          <li><i class="icon-li icon-screenshot icon-large"></i>Optymalizacja skryptów i szybsze wczytywanie strony</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Parallax Scrolling</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Kilka artykułów nt. technologii internetowo-komputerowych z naciskiem na dostępność dla zwykłych użytkowników</li>
         </ul>
@@ -107,6 +102,6 @@
         </p>
       </footer>
     </div> 
-    <script src="js/main-min.js"></script>
+    <script src="/js/script.min.js"></script>
   </body>
 </html>
