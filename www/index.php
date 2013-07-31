@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
@@ -73,7 +73,6 @@
           <li><i class="icon-li icon-screenshot icon-large"></i>Konstrukcja blogowa z wykorzystaniem frameworka Cake PHP</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wielce użyteczne formularze z wykorzystaniem AJAX</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie Javascript do stworzenia prostej gry przeglądarkowej</li>
-          <li><i class="icon-li icon-screenshot icon-large"></i>Parallax Scrolling</li>
           <li><i class="icon-li icon-screenshot icon-large"></i>Kilka artykułów nt. technologii internetowo-komputerowych z naciskiem na dostępność dla zwykłych użytkowników</li>
         </ul>
         <p>Wszystkie powyższe założenia będą wdrażane z zachowaniem wysokiej przejrzystości strony i dostępności zawartych tutaj informacji. Idąc rozwojowym torem,
@@ -102,13 +101,6 @@
         </p>
       </footer>
     </div> 
-    <script>
-    window.onload = function mobilBGAttachFix() {
-      "use strict";
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
-        document.body.style.backgroundAttachment = "scroll";
-      }
-    };
-    </script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

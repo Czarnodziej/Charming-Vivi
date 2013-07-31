@@ -7,16 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/styl.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../favicon.png" type="image/png">
-
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
-
   </head>
-
   <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
@@ -47,20 +41,20 @@
             <a href="#" title="Tutaj jesteś"><i class="icon-fixed-width icon-thumbs-up"></i>Autorskie opisy</a>
           </li>
         </ul>
-        <p class="social">
+        <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <img src="../img/facebook_32.png" alt="ikona facebooka" />
+            <span class="fb"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <img src="../img/twitter_32.png" alt="ikona twittera" />
+            <span class="tw"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <img src="../img/mail_32.png" alt="ikona poczty" />
+            <span class="mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <img src="../img/github_32.png" alt="ikona GitHub" />
+            <span class="gh"></span>
           </a>
-        </p>
+        </div>
       </nav>
       <article class="clearfix">
         <!--żeby float zachowywał wysokość kontenera-->
@@ -80,43 +74,49 @@
           <li><i class="icon-li icon-ok icon-large"></i>idea hucznie zwana
             <abbr title="Responsive Web Design">RWD</abbr>, która pozwala na sprawne wyświetlanie strony na wielkich monitorach oraz mniejszych ekranach tabletowo-komórkowo-smartfonowych</li>
         </ul>
-        <p>Rezultat graficzny jest wyraźnie widoczny, choć daleki od perfekcjonistycznych zapędów autora. Kod źródłowy dostępny jest dla wtajemniczonych. <abbr title="nie mylić z oznaczeniami samochodowymi czy samolotowymi">RWD</abbr> manifestuje
+        <p>Rezultat graficzny jest wyraźnie widoczny, choć daleki od perfekcjonistycznych zapędów autora. Kod źródłowy dostępny jest dla <a href="https://github.com/Czarnodziej/Charming-Vivi">wtajemniczonych</a>. <abbr title="nie mylić z oznaczeniami samochodowymi czy samolotowymi">RWD</abbr> manifestuje
           samo siebie podczas gdy okno przeglądarki zmienia swój rozmiar. Polecam sprawdzić osobiście, bo to wspaniale rozrywkowy przerywnik, w przeciwieństwie do
           czytania wątpliwie interesującego tekstu.
         </p>
-        <p>Autorskie umiejętności:
-          <button id="button" class="button" type="button">Pokaż detale</button>
+        <p>Autorskie umiejętności, dla wielbiących gwiazdki oraz statystyki bez wyraźnego punktu odniesienia:
+          <button id="button" type="button">Pokaż sensowniejszy opis</button>
         </p>
         <ul id="skills">
-          <li>HTML5/CSS3 <span class="three-star-half"></span>
-            <p>Kod zgodny z W3C i RWD. Netbeans IDE, Zen Grids, Emmet, HTML5 Boilerplate. Arystokracja.</p>
+          <li>HTML5/CSS3 <span class="four-star"></span>
+            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>.<br>
+              <a href="https://developers.google.com/speed/pagespeed/insights#url=czarnodziej.sanfre.eu">Optymalna prędkość</a>.
+              <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://jvi.sourceforge.net/">jVi</a> 
+            </p>
           </li>
           <li>JavaScript <span class="one-star-half"></span>
-            <p>Podstawowa manipulacja DOM, funkcje, pętle, tablice. Podstawowa obsługa jQuery. Debugowanie. Kod zgodny z JShint.
-              <br>TBD: AJAX
+            <p>Podstawowa manipulacja DOM, funkcje, pętle, tablice. Podstawowa obsługa <a href="http://jquery.com/">jQuery</a>. <a href="https://getfirebug.com/">Debugowanie</a>. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
+              <br>Todo: <a href="http://pl.wikipedia.org/wiki/AJAX">AJAX</a>, <a href="http://angularjs.org/">Angular.js</a>
             </p>
           </li>
           <li>PHP <span class="one-star"></span>
-            <p>Podstawowe zagadnienia: pętle, tablice, obiekty. MVC piękne wypieczone w CakePHP.</p>
+            <p>Podstawowe zagadnienia: pętle, tablice, obiekty. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.</p>
           </li>
           <li>MySQL <span class="two-star"></span>
             <p>Edycja, administracja, kodowanie znaków.</p>
           </li>
           <li>GIT <span class="one-star-half"></span>
-            <p>Obsługa Github. TBD: commandline.</p>
+            <p>Obsługa <a href="https://github.com/Czarnodziej">Github</a>. 
+              <br>Todo: commandline</p>
           </li>
           <li>Apache <span class="two-star"></span>
-            <p>Konfiguracja XAMPP: Dynamic Virtual Hosts + Dnsmasq, moduły.</p>
+            <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, cache, gzip.
+            </p>
           </li>
           <li>Linux <span class="two-star"></span>
-            <p>Linux Mint: konfiguracja, instalacja pakietów, podstawy terminala. TBD: zaawansowana obsługa terminala.</p>
+            <p><a href="http://www.linuxmint.com/">Linux Mint</a>: konfiguracja, instalacja pakietów, podstawy terminala. 
+              <br>Todo: zaawansowana obsługa terminala.</p>
           </li>
           <li>Windows <span class="four-star"></span>
             <p>Windows 95,98,XP,7,8. Zaawansowana konfiguracja, obsługa narzędzi administracyjnych, optymalizacja usług i działania, diagnostyka błędów.
-              <br>Oprogramowanie: Notepad++, Netbeans IDE, Windows PowerShell, Libre Office, Paint.net, GIMP, Audacity, VirtualBox.</p>
+              <br>Oprogramowanie: <a href="http://notepad-plus-plus.org/">Notepad++</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://technet.microsoft.com/en-us/library/bb978526.aspx">Windows PowerShell</a>, <a href="http://pl.libreoffice.org/">Libre Office</a>, <a href="http://www.getpaint.net/">Paint.net</a>, <a href="http://www.gimp.org/">GIMP</a>, <a href="http://audacity.sourceforge.net/">Audacity</a>, <a href="https://www.virtualbox.org/">VirtualBox.</a></p>
           </li>
           <li>Sprzęt komputerowy <span class="four-star"></span>
-            <p>Diagnostyka działania, instalacja podzespołów, zaawansowana konfiguracja, najnowsze trendy, zaawansowany overclocking, DD-WRT.</p>
+            <p>Diagnostyka działania, instalacja podzespołów, zaawansowana konfiguracja, najnowsze trendy, zaawansowany overclocking.</p>
           </li>
           <li>Technologie mobilne<span class="two-star-half"></span>
             <p>Android: Diagnostyka działania, zaawansowana konfiguracja, najnowsze trendy, kompilacja źródeł.</p>
@@ -139,51 +139,59 @@
           <li>Poczucie humoru <span class="three-star-half"></span>
             <p>Co zero powiedziało do ósemki?
               <br>"Fajny masz pasek."
-              <br>TBD: Coś śmieszniejszego.</p>
+              <br>Todo: Coś śmieszniejszego.</p>
           </li>
         </ul>
       </article>
       <footer id="stopka-strony">
-        <p class="social">
+        <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
-            <img src="../img/facebook_32.png" alt="ikona facebooka" />
+            <span class="fb"></span>
           </a>
           <a href="https://twitter.com/Czarnodziej">
-            <img src="../img/twitter_32.png" alt="ikona twittera" />
+            <span class="tw"></span>
           </a>
           <a href="mailto:pagodemc@gmail.com">
-            <img src="../img/mail_32.png" alt="ikona poczty" />
+            <span class="mail"></span>
           </a>
           <a href="https://github.com/Czarnodziej">
-            <img src="../img/github_32.png" alt="ikona GitHub" />
+            <span class="gh"></span>
           </a>
-        </p>
-        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
+        </div>
+        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym. <br>
           <?php
-          setlocale(LC_ALL, 'pl');
-
-          function strftimeV($format, $timestamp) {
-            return iconv("ISO-8859-2", "UTF-8", ucfirst(strftime($format, $timestamp)));
-          }
-
-          function get_page_mod_time() {
-            $incls = get_included_files();
-            $incls = array_filter($incls, "is_file");
-            $mod_times = array_map('filemtime', $incls);
-            $mod_time = max($mod_times);
-            return $mod_time;
-          }
-
-          echo "Ostatnia aktualizacja: " . strftimeV("%A %d %B %Y", get_page_mod_time());
+          include ("../php/dataPL.php");
           ?>
         </p>
       </footer>
-    </div>   
-<<<<<<< HEAD
-    <script src="../js/main.js"></script>
-    <script src="../js/detalButton.js"></script>
-=======
-    <script src="../js/script.min.js"></script>
->>>>>>> parent of 9243482... js fix
+    </div>
+    <script>
+      window.onload = function() {
+        "use strict";
+        var przycisk,
+                mobilBGAttachFix;
+        przycisk = function() {
+          var button = document.getElementById('button');
+          button.onclick = function() {
+            var skillVis = document.getElementById('skills') || document.getElementById('skillsv');
+            if (skillVis.id === 'skills') {
+              skillVis.id = 'skillsv';
+              button.textContent = 'Wróć do samych gwiazdek';
+            } else {
+              skillVis.id = 'skills';
+              button.textContent = 'Pokaż sensowniejszy opis';
+            }
+          };
+        };
+
+        mobilBGAttachFix = function() {
+          if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
+            document.body.style.backgroundAttachment = "scroll";
+          }
+        };
+        przycisk();
+        mobilBGAttachFix();
+      };
+    </script>
   </body>
 </html>

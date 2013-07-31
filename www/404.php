@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
-      Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
+      Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a>
       lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
       Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
     <![endif]-->
@@ -33,8 +33,8 @@
             <a href="teksty/"><i class="icon-fixed-width icon-book"></i>Teksty dowolne</a>
           </li>
           <li id="rozwin">
-            <a href="javascript/"><i class="icon-fixed-width icon-magic"></i>Javascript</a> 
-            <a href="javascript/">"Czysty" Javascript</a> 
+            <a href="javascript/"><i class="icon-fixed-width icon-magic"></i>Javascript</a>
+            <a href="javascript/">"Czysty" Javascript</a>
             <a href="javascript/">Jquery</a>
           </li>
           <li>
@@ -68,7 +68,7 @@
         </p>
         <p>Zawsze możesz skorzystać z odnośników umieszczonych na górnym pasku, ewentualnie w stopce strony.</p>
         <p>Dodatkowo możesz napisać do mnie maila odnośnie problemu ze stroną, który postaram się rozwiązać. A zazwyczaj staram się skutecznie<i class="icon-fixed-width icon-screenshot"></i>.</p>
-        <p>Możesz także włączyć radosną muzykę i zatańczyć. Nie naprawi to awarii tutejszej witryny internetowej, ale możesz poczuć się lepiej, bo ruch to radość, a radość to zdrowie<i class="icon-fixed-width icon-heart"></i>.</p>
+        <p>Możesz także włączyć radosną muzykę i zatańczyć. Nie naprawi to awarii tutejszej witryny internetowej, ale poczujesz się lepiej, bo ruch to radość, a radość to zdrowie<i class="icon-fixed-width icon-heart"></i>.</p>
       </article>
       <footer id="stopka-strony">
         <div class="social">
@@ -92,13 +92,6 @@
         </p>
       </footer>
     </div>
-    <script>
-    window.onload = function mobilBGAttachFix() {
-      "use strict";
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
-        document.body.style.backgroundAttachment = "scroll";
-      }
-    };
-    </script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

@@ -3,12 +3,12 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>  
+  <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
     <link rel="stylesheet" href="../css/smoothness/jquery-ui-1.10.3.custom.min.css">
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/style-min.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   <body>
@@ -30,7 +30,7 @@
       <nav id="lewa-kolumna">
         <ul id="sidenav">
           <li>
-            <a href="../teksty/"><i class="icon-fixed-width icon-book"></i>Teksty dowolne</a>
+            <a href="#"><i class="icon-fixed-width icon-book"></i>Teksty dowolne</a>
           </li>
           <li id="rozwin">
             <a href="#" title="Tutaj jesteś"><i class="icon-fixed-width icon-magic"></i>Javascript</a> 
@@ -69,7 +69,7 @@
           <a href="#" title="Cudna chmurka-dymek!">Tutaj kursorem najedź!</a>
         </p>
         <p>3. Zakładki:</p>
-        <div id="tabs">
+        <div id="tabs" class="ui-tabs" style="visibility: hidden">
           <ul>
             <li>
               <a href="#tabs-1">Pierwsza</a>
@@ -131,66 +131,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script> window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
     <script src="../js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-    <script>
-    window.onload = function mobilBGAttachFix() {
-      "use strict";
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
-        document.body.style.backgroundAttachment = "scroll";
-      }
-    };
-    /* Polish initialisation for the jQuery UI date picker plugin. */
-    /* Written by Jacek Wysocki (jacek.wysocki@gmail.com). */
-    /* Modified by Marcin Mongiało (pagodemc@gmail.com). */
-    jQuery(function($){
-            $.datepicker.regional['pl'] = {
-                    closeText: 'Zamknij',
-                    prevText: '&#x3c;Poprzedni',
-                    nextText: 'Następny&#x3e;',
-                    currentText: 'Dziś',
-                    monthNames: ['stycznia','lutego','marca','kwietnia','maja','czerwca',
-                    'lipca','sierpnia','września','października','listopada','grudnia'],
-                    monthNamesShort: ['Sty','Lu','Mar','Kw','Maj','Cze',
-                    'Lip','Sie','Wrz','Pa','Lis','Gru'],
-                    dayNames: ['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'],
-                    dayNamesShort: ['Nie','Pn','Wt','Śr','Czw','Pt','So'],
-                    dayNamesMin: ['N','Pn','Wt','Śr','Cz','Pt','So'],
-                    weekHeader: 'Tydz',
-                    dateFormat: 'DD, d MM yy',
-                    firstDay: 1,
-                    isRTL: false,
-                    showMonthAfterYear: false,
-                    yearSuffix: ''};
-            $.datepicker.setDefaults($.datepicker.regional['pl']);
-    });
-    $(function() {
-      "use strict";
-      $("#datepicker")
-              .datepicker({
-        autoSize: true,
-        regional: "pl",
-        showWeek: true,
-        showAnim: "slide",
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        showButtonPanel: true,
-        changeMonth: true,
-        changeYear: true,
-        yearRange: "1982:2032"
-      });
-      $(document)
-              .tooltip({
-        track: true
-      });
-      var tabs = $("#tabs")
-              .tabs();
-      tabs.find(".ui-tabs-nav")
-              .sortable({
-        axis: "x",
-        stop: function() {
-          tabs.tabs("refresh");
-        }
-      });
-    });
-    </script>
+    <script src="../js/script-min.js"></script>
   </body>
 </html>

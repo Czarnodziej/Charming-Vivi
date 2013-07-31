@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Wesoła wycieczka w treść</title>
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/style-min.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
@@ -78,14 +78,14 @@
           samo siebie podczas gdy okno przeglądarki zmienia swój rozmiar. Polecam sprawdzić osobiście, bo to wspaniale rozrywkowy przerywnik, w przeciwieństwie do
           czytania wątpliwie interesującego tekstu.
         </p>
-        <p>Autorskie umiejętności:
-          <button id="button" type="button">Pokaż detale</button>
+        <p>Autorskie umiejętności, dla wielbiących gwiazdki oraz statystyki bez wyraźnego punktu odniesienia:</p>
+         <p><button id="button" type="button"class="button">Pokaż sensowniejszy opis</button></p>
         </p>
         <ul id="skills">
           <li>HTML5/CSS3 <span class="four-star"></span>
-            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, <a href="http://ant.apache.org/">Apache ANT</a>.<br>
+            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>.<br>
               <a href="https://developers.google.com/speed/pagespeed/insights#url=czarnodziej.sanfre.eu">Optymalna prędkość</a>.
-              <br>Todo: <a href="http://jvi.sourceforge.net/">jVi</a> 
+              <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, <a href="http://jvi.sourceforge.net/">jVi</a> 
             </p>
           </li>
           <li>JavaScript <span class="one-star-half"></span>
@@ -94,14 +94,8 @@
             </p>
           </li>
           <li>PHP <span class="one-star"></span>
-            <p>Podstawowe zagadnienia: pętle, tablice, obiekty. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.</p>
-          </li>
-          <li>MySQL <span class="two-star"></span>
-            <p>Edycja, administracja, kodowanie znaków.</p>
-          </li>
-          <li>GIT <span class="one-star-half"></span>
-            <p>Obsługa <a href="https://github.com/Czarnodziej">Github</a>. 
-              <br>Todo: commandline</p>
+            <p>Podstawowe zagadnienia: pętle, tablice, obiekty. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.
+            <br>Todo: blog/CMS MVC w CakePHP</p>
           </li>
           <li>Apache <span class="two-star"></span>
             <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, cache, gzip.
@@ -113,10 +107,10 @@
           </li>
           <li>Windows <span class="four-star"></span>
             <p>Windows 95,98,XP,7,8. Zaawansowana konfiguracja, obsługa narzędzi administracyjnych, optymalizacja usług i działania, diagnostyka błędów.
-              <br>Oprogramowanie: <a href="http://notepad-plus-plus.org/">Notepad++</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://technet.microsoft.com/en-us/library/bb978526.aspx">Windows PowerShell</a>, <a href="http://pl.libreoffice.org/">Libre Office</a>, <a href="http://www.getpaint.net/">Paint.net</a>, <a href="http://www.gimp.org/">GIMP</a>, <a href="http://audacity.sourceforge.net/">Audacity</a>, <a href="https://www.virtualbox.org/">VirtualBox.</a></p>
+              <br>Oprogramowanie: <a href="http://notepad-plus-plus.org/">Notepad++</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://code.google.com/p/gitextensions/">Git Extensions</a>, <a href="http://pl.libreoffice.org/">Libre Office</a>, <a href="http://www.getpaint.net/">Paint.net</a>, <a href="http://www.gimp.org/">GIMP</a>, <a href="http://audacity.sourceforge.net/">Audacity</a>, <a href="https://www.virtualbox.org/">VirtualBox.</a></p>
           </li>
           <li>Sprzęt komputerowy <span class="four-star"></span>
-            <p>Diagnostyka działania, instalacja podzespołów, zaawansowana konfiguracja, najnowsze trendy, zaawansowany overclocking, <a href="http://en.wikipedia.org/wiki/DD-WRT">DD-WRT</a>.</p>
+            <p>Diagnostyka działania, instalacja podzespołów, zaawansowana konfiguracja, najnowsze trendy, <a href="http://valid.canardpc.com/2877857">zaawansowany overclocking.</a></p>
           </li>
           <li>Technologie mobilne<span class="two-star-half"></span>
             <p>Android: Diagnostyka działania, zaawansowana konfiguracja, najnowsze trendy, kompilacja źródeł.</p>
@@ -165,33 +159,6 @@
         </p>
       </footer>
     </div>
-    <script>
-    window.onload = function () {
-      "use strict";
-      var przycisk,
-        mobilBGAttachFix;
-      przycisk = function () {
-        var button = document.getElementById('button');
-        button.onclick = function () {
-          var skillVis = document.getElementById('skills') || document.getElementById('skillsv');
-          if(skillVis.id === 'skills') {
-            skillVis.id = 'skillsv';
-            button.textContent = 'Ukryj detale';
-          } else {
-            skillVis.id = 'skills';
-            button.textContent = 'Pokaż detale';
-          }
-        };
-      };
-
-      mobilBGAttachFix = function () {
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
-          document.body.style.backgroundAttachment = "scroll";
-        }
-      };
-      przycisk();
-      mobilBGAttachFix();
-    };
-    </script>
+    <script src="../js/script-min.js"></script>
   </body>
 </html>
