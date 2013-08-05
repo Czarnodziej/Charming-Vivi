@@ -83,8 +83,8 @@
         </p>
         <ul id="skills">
           <li>HTML5/CSS3 <span class="four-star"></span>
-            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>.<br>
-              <a href="https://developers.google.com/speed/pagespeed/insights#url=czarnodziej.sanfre.eu">Optymalna prędkość</a>.
+            <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>, <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>, <a href="http://zengrids.com/">Zen Grids</a>, <a href="http://emmet.io/">Emmet</a>, <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>, IE8+.<br>
+              <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
               <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, <a href="http://jvi.sourceforge.net/">jVi</a> 
             </p>
           </li>
@@ -152,7 +152,7 @@
             <span class="gh"></span>
           </a>
         </div>
-        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym. <br>
+        <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
           <?php
           include ("../php/dataPL.php");
           ?>

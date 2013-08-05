@@ -3,7 +3,6 @@
    not DRY enough for my taste. A good taste.*/
 
 
-window.onload = function() {
   "use strict"; //jslint compatibility
   var mobilBGAttachFix, //fixes backgroundAttachment=fixed in mobile web browsers (esp. android)
       przycisk;
@@ -31,7 +30,6 @@ window.onload = function() {
     przycisk();
   }
   mobilBGAttachFix();
-};
 
 $(function() {
   "use strict"; //jslint compatibility

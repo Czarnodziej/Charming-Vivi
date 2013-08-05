@@ -9,7 +9,7 @@
     <title>Wesoła wycieczka w treść</title>
     <link rel="stylesheet" href="css/style-min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -94,7 +94,7 @@
             <span class="gh"></span>
           </a>
         </div>
-        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
+        <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
           <?php
           include ("php/dataPL.php");
           ?>
@@ -104,3 +104,5 @@
     <script src="js/script-min.js"></script>
   </body>
 </html>
+
+

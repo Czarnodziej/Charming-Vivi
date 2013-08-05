@@ -121,7 +121,7 @@
             <span class="gh"></span>
           </a>
         </div>
-        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
+        <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
           <?php
           include ("../php/dataPL.php");
           ?>

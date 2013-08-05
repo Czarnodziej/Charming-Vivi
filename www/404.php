@@ -6,6 +6,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <base href="http://czarnodziej.sanfre.eu">
     <title>Wesoła wycieczka w treść</title>
     <link rel="stylesheet" href="css/style-min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -85,7 +86,7 @@
             <span class="gh"></span>
           </a>
         </div>
-        <p>©2013. Kopiowanie treści strony bez zgody autora jest czynem karygodnym.<br>
+        <p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
           <?php
           include ("php/dataPL.php");
           ?>
