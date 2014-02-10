@@ -78,7 +78,13 @@
         <p>Wszystkie powyższe założenia będą wdrażane z zachowaniem wysokiej przejrzystości strony i dostępności zawartych tutaj informacji. Idąc rozwojowym torem,
           powyższych celów będzie więcej, bo apetyt na ów rozwój rośnie wraz z ilością poznawanych technologii (<i class="icon-food icon-large"></i> + <i class="icon-cogs icon-large"></i> =
           <i class="icon-smile icon-large"></i>). A tych nie brakuje.</p>
-      </article>
+ 	Wersje strony:
+	<ul style='padding-left: 10px;'>
+	<li><a href="//insanet.pl/">Laravel 4 </a></li>
+		<li><a href="//cake.insanet.pl">CakePHP</a></li>
+		<li><a href="//old.insanet.pl">HTML (obecna wersja)</a></li>
+	</ul>
+     </article>
       <footer id="stopka-strony">
         <div class="social">
           <a href="https://www.facebook.com/marcin.marcinowy.5">
