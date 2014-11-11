@@ -14,8 +14,7 @@
   <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">Używasz <strong>przestarzałej</strong>przeglądarki.
-      Gorąco zalecam <a href="http://browsehappy.com/">aktualizację</a> 
-      lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
+      Gorąco zalecam <a href="http://browsehappy.com/">aktualizację.</a> 
       Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
     <![endif]-->
     <div id="gora-kontener">
@@ -79,7 +78,7 @@
           <i class="icon-smile icon-large"></i>). A tych nie brakuje.</p>
  	Wersje strony:
 	<ul style='padding-left: 10px;'>
-	<li><a href="//insanet.pl/">Symfony2 + Angular.js </a></li>
+	<li><a href="//insanet.pl/">Symfony2</a></li>
 	<li><a href="//laravel.insanet.pl/">Laravel 4</a></li>
 		<li><a href="//cake.insanet.pl">CakePHP</a></li>
 		<li><a href="//old.insanet.pl">HTML (obecna wersja)</a></li>
